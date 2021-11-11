@@ -1,0 +1,289 @@
+/*ESTILOS GENERALES*/
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4.8rem;
+  letter-spacing: 0.067rem;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.9rem;
+  letter-spacing: 0.055rem;
+}
+
+img {
+  display: inline-block;
+}
+
+li{
+  list-style: none;
+}
+
+/* UTILIDADES */
+
+.boton {
+  background-color: #e0752f;
+  color: #ffffff;
+  width: 14.4rem;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  border-radius: 2.5rem;
+  border: none;
+}
+
+/* HEADER */
+
+.header {
+  background-image: url(/imagenes/slider-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  width: 100%;
+}
+
+.header__navegador {
+  border-bottom: #e0752f solid 0.2rem;
+}
+
+.header__flex__navegador {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.header__navegador__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__navegador__menu a {
+  color: #ffffff;
+  margin-left: 5rem;
+}
+
+.header__flex__home {
+  width: 85%;
+  margin: 0 auto;
+  padding: 16rem 0;
+}
+
+.header__home__title {
+  color: #ffffff;
+}
+
+.header__home__text {
+  color: #ffffff;
+  padding: 4rem 0;
+  line-height: 2.1rem;
+}
+
+.puntos p {
+  margin: 2rem 0;
+  font-size: 6rem;
+  color: #5f6368;
+  letter-spacing: 0.5rem;
+}
+
+.puntos p span {
+  color: #e0752f;
+}
+
+/*BLOQUE INTRODUCCION*/
+
+.main__introduccion {
+  border-left: #e0752f solid 3rem;
+  padding: 0 30rem;
+  margin: 15rem 0;
+}
+
+.main__introduccion__title {
+  padding: 1.7rem 0;
+}
+
+.main__introduccion__title1 {
+  color: #343434;
+}
+.main__introduccion__title2 {
+  color: #e0752f;
+}
+
+.main__introduccion__text {
+  max-width: 76.8rem;
+  color: #343434;
+  line-height: 2.8rem;
+  padding: 1.7rem 0;
+}
+
+/*BLOQUE PRODUCTOS*/
+
+.main__productos {
+  background-image: linear-gradient(to right, #f2f4f1 65%, #dce1da 35%);
+  padding: 12rem 0;
+}
+
+.main__productos__flex {
+  background-image: url(../imagenes/section3-image.png);
+  background-size: cover;
+  background-position: center center;
+  width: 65%;
+  height: 55rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.main__productos__caja {
+  background-color: #e0752f;
+  color: #ffffff;
+  flex-basis: 49%;
+  height: 55%;
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main__productos__title {
+  margin-top: 3rem;
+}
+
+.main__productos__arrows {
+  align-self: flex-end;
+}
+
+/* BLOQUE SERVICIOS */
+
+.main__servicios__menu {
+  background-image: linear-gradient(to right, #fff 40%, transparent 40%, transparent 100%),
+    url(../imagenes/section4-image.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right center;
+  padding-top: 15rem;
+  padding-bottom: 25rem;
+}
+
+.menu__servicios__contenedor {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main__menu__contenedor {
+  flex-basis: 50%;
+}
+
+.main__menu__nodesplegado img{
+  height: 100%;
+}
+
+.main__menu__nodesplegado,
+.main__menu__desplegado {
+  padding: 2rem 4rem;
+  border: #E3E3E3 solid 0.1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #5F6368;
+}
+
+.main__menu__nodesplegado {
+  background-color: #F8F8F8;
+}
+
+.main__menu__desplegado {
+background-color: #ffffff;
+padding: 4rem;
+}
+
+/* FORMULARIO */
+
+.main__formulario {
+  background-image: linear-gradient(to right, #F2F4F1 70%, #DCE1DA 30%);
+}
+
+.formulario__contenedor {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 12rem 0;
+}
+
+.formulario {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo__formulario {
+color: #343434;
+margin-bottom: 7rem;
+}
+
+.titulo__formulario span {
+  color: #e0752f;
+}
+
+.formulario__imagen img {
+
+margin: 6rem;
+margin-left: 10rem;
+}
+
+.campo { 
+  margin-bottom: 3rem;
+  display: flex;
+  
+  
+}
+
+.campo input, textarea {
+  flex: 1;
+background-color: #F2F4F1;
+color: #5F6368;
+padding: 1rem 0;
+border: none;
+border-bottom: #BEBEBE solid 0.2rem;
+}
+
+
+/* FOOTER */
+
+footer {
+padding: 4rem 10rem;
+background-color: #343434;  
+color: #DCE1DA;
+display: flex;
+justify-content: space-between;
+}
+
